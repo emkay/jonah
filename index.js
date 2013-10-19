@@ -9,3 +9,11 @@ module.exports.hex = hex = function (s) {
         return c.charCodeAt(0).toString(16);
     }).join('');
 }
+
+module.exports.nesHex = function (s) {
+    var h = hex(s);
+    var nh = h.match(/.{2}/g).map(function (n) {
+        return ['$',n,','].join('');
+    }).join('');
+    return nh + '$00'; // NULL terminate that sucka
+}
