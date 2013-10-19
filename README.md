@@ -1,7 +1,7 @@
 jonah
 =====
 
-Hex to Ascii, Ascii to Hex
+Hex to Ascii, Ascii to Hex, Ascii to Hex that the NES can understand.
 
 ## Usage
     var jonah = require('jonah');
